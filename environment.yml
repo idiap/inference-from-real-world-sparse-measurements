@@ -1,0 +1,33 @@
+# Copyright © <2023> Idiap Research Institute <contact@idiap.ch>
+#
+# SPDX-FileContributor: Arnaud Pannatier <arnaud.pannatier@idiap.ch>
+#
+# SPDX-License-Identifier: LGPL-3.0-only
+name: msa
+dependencies:
+  - python=3.10
+  - pip
+  - ipykernel # BSD-3-Clause, https://ipykernel.readthedocs.io/en/latest/
+  - pytorch::pytorch=2.0 # BSD-3-Clause, https://pytorch.org/
+  - pytorch::torchvision # BSD-3-Clause, https://pytorch.org/vision/
+  - pytorch::pytorch-cuda=11.7 # BSD-3-Clause, https://pytorch.org/
+  - nvidia::cuda=11.7 # BSD-3-Clause, https://pytorch.org/
+  - black # MIT, https://github.com/psf/black
+  - tqdm # MIT, https://github.com/tqdm/tqdm
+  - pyyaml # MIT, https://pyyaml.org/
+  - h5py # BSD-3-Clause, https://www.h5py.org/
+  - matplotlib # PSF-based, https://matplotlib.org/
+  - more-itertools # MIT, https://github.com/more-itertools/more-itertools
+  - pytest # MIT, https://docs.pytest.org/
+  - networkx # BSD-3-Clause, https://networkx.github.io/
+  - pandas # BSD-3-Clause, https://pandas.pydata.org/
+  - pre-commit # MIT, https://pre-commit.com/
+  - conda-forge::hydra-core # MIT, https://hydra.cc/
+  - pyg::pyg # MIT, https://github.com/pyg-team/pytorch_geometric
+  - xarray # Apache-2.0, https://github.com/pydata/xarray, needed for era5 task
+  - conda-forge::cfgrib # Apache-2.0, https://github.com/ecmwf/cfgrib, needed for era5 task
+  - pip:
+    - git+https://github.com/ArnaudPannatier/graph_element_networks # MIT, https://github.com/ArnaudPannatier/graph_element_networks, Forked form a MIT repo, added a setup.py #
+    - git+https://github.com/neuraloperator/neuraloperator # MIT, https://github.com/neuraloperator/neuraloperator.git
+    - git+https://github.com/ArnaudPannatier/Geo-FNO # MIT, https://github.com/ArnaudPannatier/Geo-FNO Forked form a MIT repo, added a setup.py
+    - .

@@ -1,0 +1,17 @@
+# @package _global_
+# Copyright © <2023> Idiap Research Institute <contact@idiap.ch>
+#
+# SPDX-FileContributor: Arnaud Pannatier <arnaud.pannatier@idiap.ch>
+#
+# SPDX-License-Identifier: LGPL-3.0-only
+
+experiment:
+  plot_example: False
+hydra:
+  run:
+    dir: .
+  job:
+    chdir: False
+  output_subdir: null
+hydra/job_logging: disabled
+hydra/hydra_logging: disabled

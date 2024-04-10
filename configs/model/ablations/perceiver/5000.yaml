@@ -1,0 +1,14 @@
+# Copyright © <2023> Idiap Research Institute <contact@idiap.ch>
+#
+# SPDX-FileContributor: Arnaud Pannatier <arnaud.pannatier@idiap.ch>
+#
+# SPDX-License-Identifier: LGPL-3.0-only
+params:
+  n_latents: 49
+  dim_h: 32
+  nhead: 2
+  nlayers: 4
+  share_blocks: True
+  n_x: ${dataset.n_x}
+name: perceiver
+size: 5000

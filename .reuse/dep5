@@ -1,0 +1,10 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Inference from Real-World Sparse Measurements
+Upstream-Contact: Arnaud Pannatier <arnaud.pannatier@idiap.ch>
+Source:
+
+# Sample paragraph, commented out:
+#
+# Files: src/*
+# Copyright: $YEAR $NAME <$CONTACT>
+# License: ...

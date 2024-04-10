@@ -1,0 +1,16 @@
+# @package _global_
+# Copyright © <2023> Idiap Research Institute <contact@idiap.ch>
+#
+# SPDX-FileContributor: Arnaud Pannatier <arnaud.pannatier@idiap.ch>
+#
+# SPDX-License-Identifier: LGPL-3.0-only
+
+model:
+  params:
+    dim_h: 32
+    message_passing_steps: 13
+  pos_lr: 3e-6
+  grid_size: 7
+  name: gen
+  size: 5000
+name: ${model.name}-${model.size}-gs${model.grid_size}-${experiment.seed}-pos_lr${model.pos_lr}

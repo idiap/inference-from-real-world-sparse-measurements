@@ -1,0 +1,20 @@
+# @package _global_
+# Copyright © <2023> Idiap Research Institute <contact@idiap.ch>
+#
+# SPDX-FileContributor: Arnaud Pannatier <arnaud.pannatier@idiap.ch>
+#
+# SPDX-License-Identifier: LGPL-3.0-only
+dataset:
+  type: wind
+  tw: null
+  path: data/wind
+  create: default
+experiment:
+  batch_size: 1
+  steps: 1000
+  nb_epochs: 15
+model:
+  params:
+    dim_x: 3
+    dim_yc: 2
+    dim_yt: 2

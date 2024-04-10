@@ -1,0 +1,18 @@
+# @package _global_
+# Copyright © <2023> Idiap Research Institute <contact@idiap.ch>
+#
+# SPDX-FileContributor: Arnaud Pannatier <arnaud.pannatier@idiap.ch>
+#
+# SPDX-License-Identifier: LGPL-3.0-only
+dataset:
+  type: era5
+  path: data/era5
+experiment:
+  batch_size: 128
+  nb_epochs: 1000
+  freq: 1000
+model:
+  params:
+    dim_x: 2
+    dim_yc: 7
+    dim_yt: 2

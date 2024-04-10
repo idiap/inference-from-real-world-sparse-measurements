@@ -1,0 +1,20 @@
+# Copyright © <2023> Idiap Research Institute <contact@idiap.ch>
+#
+# SPDX-FileContributor: Arnaud Pannatier <arnaud.pannatier@idiap.ch>
+#
+# SPDX-License-Identifier: LGPL-3.0-only
+defaults:
+  - _self_
+  - model: msa/5000
+  - dataset: wind
+experiment:
+  lr: 3e-4
+  seed: 0
+  wd: 0.0
+loglevel: INFO
+name: ${model.name}-${model.size}-${experiment.seed}
+hydra:
+  run:
+    dir: outputs/${name}/${dataset.type}/${now:%H-%M-%S}
+  job:
+    chdir: False

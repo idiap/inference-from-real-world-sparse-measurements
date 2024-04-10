@@ -1,0 +1,19 @@
+# @package _global_
+# Copyright © <2023> Idiap Research Institute <contact@idiap.ch>
+#
+# SPDX-FileContributor: Arnaud Pannatier <arnaud.pannatier@idiap.ch>
+#
+# SPDX-License-Identifier: LGPL-3.0-only
+dataset:
+  type: darcy
+  path: data/darcy
+experiment:
+  lr: 5e-5
+  batch_size: 128
+  nb_epochs: 1500
+  freq: 1500
+model:
+  params:
+    dim_x: 2
+    dim_yc: 1
+    dim_yt: 1

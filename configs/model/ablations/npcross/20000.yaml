@@ -1,0 +1,10 @@
+# Copyright © <2023> Idiap Research Institute <contact@idiap.ch>
+#
+# SPDX-FileContributor: Arnaud Pannatier <arnaud.pannatier@idiap.ch>
+#
+# SPDX-License-Identifier: LGPL-3.0-only
+params:
+  dim_h: 64
+  nhead: 2
+name: npcross
+size: 20000
